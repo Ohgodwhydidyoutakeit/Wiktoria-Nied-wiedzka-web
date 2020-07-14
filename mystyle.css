@@ -1,0 +1,68 @@
+/* pobranie czcionki  */
+@import url("https://fonts.googleapis.com/css2?family=Damion&display=swap");
+body {
+  margin: 0;
+}
+
+.main-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5cac3;
+  font-family: "Damion", cursive;
+  height: 100vh;
+}
+.bar {
+  font-size: 3rem;
+  padding: 0 0 0 3rem;
+  background-color: #f28482;
+}
+.main {
+  flex: 1;
+}
+.box {
+  display: flex;
+  font-size: 1.7rem;
+  align-items: center;
+}
+ul {
+  list-style-type: circle;
+}
+ul :hover {
+  color: #84a59d;
+  transition: 1s;
+}
+.box > img {
+  height: 300px;
+  padding: 0 3rem 0 3rem;
+}
+
+#one {
+  margin-top: 1rem;
+}
+#two {
+  flex-direction: row-reverse;
+}
+
+.stopka {
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #f7ede2;
+}
+
+/* responsywność  */
+@media all and (max-width: 992px) {
+  .main-box {
+    background: #84a59d;
+    height: auto;
+  }
+  .box {
+    flex-direction: column;
+  }
+  #two {
+    flex-direction: column;
+  }
+  ul :hover {
+    color: #f7ede2;
+    transition: 1s;
+  }
+}
